@@ -13,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Get a random activity',
+      title: 'Activity Finder',
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const MyHomePage(title: 'Activity Finder'),
+      home:
+          const MyHomePage(title: 'Activity Finder - find an activity to do!'),
     );
   }
 }
