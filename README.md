@@ -11,7 +11,7 @@ This project integrates the Bored API in Flutter.
 ## Live Demos
 
 - [Web](https://flutterwebapps.com/portfolio/activity-finder/#/)
-- [Android (Play Store)](https://play.google.com/store/apps/details?id=com.strawanzer.activityfinder) (coming soon)
+- [Android (Play Store)](https://play.google.com/store/apps/details?id=com.strawanzer.activityfinder)
 
 
 ## Documentation
