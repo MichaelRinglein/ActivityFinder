@@ -1,16 +1,30 @@
-# boredapi
+# Activity Finder build with Flutter and Bored API for Android and Web
 
-A new Flutter project.
+This project integrates the Bored API in Flutter.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Packages Used (all with Null safety)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- http
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Live Demos
+
+- [Web](https://flutterwebapps.com/portfolio/activity-finder/#/)
+- [Android (Play Store)](https://play.google.com/store/apps/details?id=com.strawanzer.activityfinder)
+
+
+## Documentation
+
+The steps of the article of http from the [Flutter cookbook](https://flutter.dev/docs/cookbook/networking/fetch-data) is followed.
+
+### main.dart
+A `FutureBuilder` is used to display the data.
+
+On click on the `FloatingActionButton` the state is set to re-render the `FutureBuilder` again (since setting state runs the build function again).
+
+### api/activities.dart
+A `Future` is used for the API call. The response is parsed into the `SingleActivity` class.
+
+### single_activity.dart
+A `SingleActivity` custom class takes the response from the Bored API and sorts the data from the received JSON.
