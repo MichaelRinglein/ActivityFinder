@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.boredapi">
+    <!-- Required to fetch data from the internet. -->
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="boredapi"
         android:icon="@mipmap/ic_launcher">
@@ -36,8 +38,6 @@
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data
             android:name="flutterEmbedding"
-            android:value="2" />
-        <!-- Required to fetch data from the internet. -->
-        <uses-permission android:name="android.permission.INTERNET" />
+            android:value="2" />        
     </application>
 </manifest>
