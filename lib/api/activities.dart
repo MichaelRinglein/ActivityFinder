@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 class ActivitiesServices {
   Future<SingleActivity> getSingleActivity() async {
     final response =
-        await http.get(Uri.parse('http://www.boredapi.com/api/activity/'));
+        await http.get(Uri.parse('https://www.boredapi.com/api/activity/'));
 
     if (response.statusCode == 200) {
       // If the server did return a 200 OK response,

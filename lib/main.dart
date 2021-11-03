@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const MyHomePage(title: 'Load a random acivity'),
+      home: const MyHomePage(title: 'Activity Finder'),
     );
   }
 }
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Here is a random activity:',
+              'Here is a activity you could do:',
             ),
             FutureBuilder<SingleActivity>(
               future: _singleActivity,
