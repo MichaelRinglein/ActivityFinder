@@ -14,7 +14,7 @@ class SingleActivity {
     return SingleActivity(
       activity: json['activity'],
       type: json['type'],
-      price: json['price'],
+      price: json['price'].toDouble(),
       participants: json['participants'],
     );
   }
