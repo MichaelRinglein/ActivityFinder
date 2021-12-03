@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   if (snapshot.connectionState == ConnectionState.done) {
                     final String activity = snapshot.data!.activity;
                     final String type = snapshot.data!.type;
-                    final String price = snapshot.data!.price.toString();
+                    //final String price = snapshot.data!.price.toString();
                     final String participants =
                         snapshot.data!.participants.toString();
                     return Column(
@@ -94,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             const SizedBox(
                               height: 10.0,
                             ),
+                            /*
                             Text(
                               '💰 $price USD',
                               style: const TextStyle(
@@ -104,6 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             const SizedBox(
                               height: 10.0,
                             ),
+                            */
                             Text(
                               '👨‍🦱 $participants person(s)',
                               style: const TextStyle(
